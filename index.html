@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOTBOX – Marketing That Moves the Needle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    #intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      animation: logoFadeOut 4s ease forwards;
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    #intro img {
+      width: 200px;
+      animation: logoZoomFade 4s ease forwards;
+    }
+
+    @keyframes logoZoomFade {
+      0% { transform: scale(1.5); opacity: 0; }
+      30% { transform: scale(3.0); opacity: 1; }
+      60% { transform: scale(1.5); opacity: 1; }
+      100% { opacity: 0; transform: scale(0); }
+    }
+
+    @keyframes logoFadeOut {
+      to { visibility: hidden; }
+    }
+
+    #mainContent {
+      opacity: 0;
+      animation: showMain 1s ease 4s forwards;
+    }
+
+    @keyframes showMain {
+      to { opacity: 1; }
+    }
+
+    header {
+      height: 100vh;
+      background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5%;
+    }
+
+    header h1 {
+      font-size: 4.5em;
+      font-family: 'Abril Fatface', serif;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 1em;
+    }
+
+    .btn-group {
+      margin-top: 2em;
+    }
+
+    .btn {
+      background: #e50914;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      margin-right: 1em;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 5% 10%;
+      background-color: #111;
+    }
+
+    h2 {
+      font-family: 'Anton', sans-serif;
+      color: #e50914;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+      margin-top: 2em;
+    }
+
+    .card {
+      background: #222;
+      padding: 1.5em;
+      border-radius: 10px;
+    }
+
+    .footer {
+      background-color: #111;
+      padding: 2em 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+    }
+
+    .footer a {
+      color: #aaa;
+      margin-left: 1.5em;
+      text-decoration: none;
+    }
+
+    /* Swiper styles */
+    .swiper {
+      width: 100%;
+      padding: 30px 0;
+      overflow-x: auto;
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      gap: 20px;
+    }
+
+    .swiper-slide {
+      flex: 0 0 auto;
+      width: 250px;
+      height: 350px;
+      border-radius: 10px;
+      background-position: center;
+      background-size: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .swiper-slide:hover {
+      transform: scale(1.05);
+    }
+
+    /* Scrollbar styling (optional) */
+    .swiper::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .swiper::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo Animation Intro -->
+  <div id="intro">
+    <img src="logo.png" alt="HOTBOX Logo">
+  </div>
+
+  <!-- Main Landing Content -->
+  <div id="mainContent">
+    <header>
+      <h1>Marketing That Cuts Through the Noise</h1>
+      <p>Bold strategy. Clean content. Real results.</p>
+      <div class="btn-group">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7LWdKczsfToFnSKsXvWviZUsce3lKNbtKCmtWQKFqApX05A/viewform" target="_blank" class="btn">Let’s Talk</a>
+        <a href="#services" class="btn" style="background:#444">Our Work →</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Hotbox</h2>
+      <p>We’re a modern agency blending bold creativity with data-driven strategy to build brands that grow and convert. No templates. Just custom, performance-focused marketing systems that scale with you.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <!-- Manual Swipe Image Slider -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url('hotbox.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('thukpa.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('chicken lolipop.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('seekh kabab.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('sundae jar.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('thirsty.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('gucci.jpg')"></div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">📈 Digital Marketing & Strategy</div>
+        <div class="card">🔍 SEO (Search Engine Optimization)</div>
+        <div class="card">🎥 Video Ads & Production</div>
+        <div class="card">🧠 PR & Brand Management</div>
+        <div class="card">🖥 Website & Landing Page Development</div>
+        <div class="card">🖌 Logo & Menu Design</div>
+        <div class="card">🎬 Animation & Cinematography</div>
+        <div class="card">📢 Advertising (Social Media, Print, Outdoor)</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let’s Work Together</h2>
+      <p>Want to build a brand that stands out and scales smart?</p>
+      <p><strong>Email:</strong> hotboxagencyindia@gmail.com<br>
+         <strong>Phone:</strong> +91 82795 12359<br>
+         <strong>Instagram:</strong> @hotbox_agency</p>
+    </section>
+
+    <footer class="footer">
+      <div>© 2025 HOTBOX Marketing Management and Solutions</div>
+      <div>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Careers</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
