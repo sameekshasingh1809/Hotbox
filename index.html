@@ -9,13 +9,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <style>
-    body {
+    /* Reset & Base Styles */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Poppins', sans-serif;
       background-color: #000;
       color: #fff;
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Intro Animation */
     #intro {
       display: flex;
       justify-content: center;
@@ -63,17 +75,19 @@
       flex-direction: column;
       justify-content: center;
       padding: 0 5%;
+      text-align: center;
     }
 
     header h1 {
-      font-size: 4.5em;
+      font-size: 3.5rem;
       font-family: 'Abril Fatface', serif;
-      margin: 0;
+      color: #fff;
     }
 
     header p {
-      font-size: 1.2em;
-      margin-top: 1em;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ccc;
     }
 
     .btn-group {
@@ -84,20 +98,27 @@
       background: #e50914;
       color: #fff;
       padding: 0.8em 1.5em;
-      margin-right: 1em;
-      text-decoration: none;
+      margin: 0.5em;
       border-radius: 5px;
       font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ff2c1a;
     }
 
     section {
       padding: 5% 10%;
       background-color: #111;
+      text-align: center;
     }
 
     h2 {
       font-family: 'Anton', sans-serif;
       color: #e50914;
+      margin-bottom: 1rem;
     }
 
     .grid {
@@ -111,25 +132,9 @@
       background: #222;
       padding: 1.5em;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
-    .footer {
-      background-color: #111;
-      padding: 2em 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.9em;
-      border-top: 1px solid #333;
-    }
-
-    .footer a {
-      color: #aaa;
-      margin-left: 1.5em;
-      text-decoration: none;
-    }
-
-    /* Swiper styles */
     .swiper {
       width: 100%;
       padding: 30px 0;
@@ -155,31 +160,44 @@
       transform: scale(1.05);
     }
 
-    /* Scrollbar styling (optional) */
-    .swiper::-webkit-scrollbar {
-      height: 6px;
+    .footer {
+      background-color: #111;
+      padding: 2em 5%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      border-top: 1px solid #333;
     }
 
-    .swiper::-webkit-scrollbar-thumb {
-      background: #444;
-      border-radius: 10px;
+    .footer a {
+      color: #aaa;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .btn {
+        padding: 0.6em 1em;
+      }
     }
   </style>
 </head>
 <body>
-
   <!-- Logo Animation Intro -->
   <div id="intro">
     <img src="logo.png" alt="HOTBOX Logo">
   </div>
 
-  <!-- Main Landing Content -->
+  <!-- Main Content -->
   <div id="mainContent">
     <header>
       <h1>Marketing That Cuts Through the Noise</h1>
       <p>We box ideas, then set them on fire.</p>
       <div class="btn-group">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7LWdKczsfToFnSKsXvWviZUsce3lKNbtKCmtWQKFqApX05A/viewform" target="_blank" class="btn">Let’s Talk</a>
+        <a href="https://docs.google.com/forms/..." class="btn" target="_blank">Let’s Talk</a>
         <a href="#services" class="btn" style="background:#444">Our Work →</a>
       </div>
     </header>
@@ -191,22 +209,9 @@
 
     <section id="services">
       <h2>Our Services</h2>
-
-      <!-- Manual Swipe Image Slider -->
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url('hotbox.jpg')"></div>
-          <div class="swiper-slide" style="background-image:url('thukpa.jpg')"></div>
-          <div class="swiper-slide" style="background-image:url('chicken lolipop.jpg')"></div>
-          <div class="swiper-slide" style="background-image:url('seekh kabab.jpg')"></div>
-          <div class="swiper-slide" style="background-image:url('sundae jar.jpg')"></div>
-          <div class="swiper-slide" style="background-image:url('thirsty.jpg')"></div>
-          <div class="swiper-slide" style="background-image:url('gucci.jpg')"></div>
-           <div class="swiper-slide" style="background-image:url('soni.jpg')"></div>
-           <div class="swiper-slide" style="background-image:url('browniebliss.jpg')"></div>
-           <div class="swiper-slide" style="background-image:url('mango.jpg')"></div>
-           <div class="swiper-slide" style="background-image:url('ffemina.jpg')"></div>
-           <div class="swiper-slide" style="background-image:url('jewellery.jpg')"></div>
+          <!-- Add your slide images here -->
         </div>
       </div>
 
@@ -230,34 +235,28 @@
          <strong>Instagram:</strong> @hotbox_agency</p>
     </section>
 
-   <footer style="background-color: #111; color: white; padding: 40px 20px; text-align: center;">
-  <div style="max-width: 800px; margin: auto;">
-    <h3>Hotbox</h3>
-    <p>We box ideas, then set them on fire.</p>
-    
-    <div style="margin-top: 20px;">
-      <a href="#terms" style="color: #bbb; margin: 0 10px;">Terms & Conditions</a> |
-      <a href="#privacy" style="color: #bbb; margin: 0 10px;">Privacy Policy</a>
-    </div>
-    
-    <p style="margin-top: 20px; color: #777;">&copy; 2025 Hotbox. All rights reserved.</p>
-  </div>
-</footer>
+    <footer class="footer">
+      <div>
+        <h3>Hotbox</h3>
+        <p>We box ideas, then set them on fire.</p>
+        <p>
+          <a href="#terms">Terms & Conditions</a> |
+          <a href="#privacy">Privacy Policy</a>
+        </p>
+        <p>&copy; 2025 Hotbox. All rights reserved.</p>
+      </div>
+    </footer>
 
-<!-- Terms & Privacy Section -->
-<section id="terms" style="background-color: #111; padding: 40px 20px;">
-  <div style="max-width: 900px; margin: auto;">
-    <h2>Terms & Conditions</h2>
-    <p>By using this website, you agree to comply with and be bound by the following terms and conditions. All content is for informational purposes only and may be updated without prior notice. You must not misuse this website or engage in any activity that could damage it.</p>
-  </div>
-</section>
+    <section id="terms" style="background-color:#111; padding: 40px 20px;">
+      <h2>Terms & Conditions</h2>
+      <p>By using this website, you agree to comply with and be bound by the following terms and conditions...</p>
+    </section>
 
-<section id="privacy" style="background-color: #111; padding: 40px 20px;">
-  <div style="max-width: 900px; margin: auto;">
-    <h2>Privacy Policy</h2>
-    <p>We respect your privacy. Any data collected (such as contact form inputs) will be used solely to improve your experience. We do not share or sell your personal information with third parties. This website uses cookies to enhance user experience.</p>
-  </div>
-</section>
+    <section id="privacy" style="background-color:#111; padding: 40px 20px;">
+      <h2>Privacy Policy</h2>
+      <p>We respect your privacy. Any data collected will be used solely to improve your experience...</p>
+    </section>
   </div>
 </body>
 </html>
+
