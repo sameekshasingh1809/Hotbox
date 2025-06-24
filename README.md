@@ -1,35 +1,45 @@
-# 🌟 Hotbox Marketing Management & Solutions – Landing Page
+# 🔥 Hotbox – Landing Page for a Creative Marketing Startup
 
-A sleek and responsive landing page developed for **Hotbox Marketing Management & Solutions**, a startup focused on providing innovative branding and marketing solutions.
+This project is a fully responsive landing page built for **Hotbox Marketing Management & Solutions**, a startup focused on branding, marketing, and strategic growth. The website was designed and developed independently to establish Hotbox’s online presence with a modern and professional look.
 
-## 🔍 About the Project
+---
 
-This project showcases the official website for **Hotbox**, designed to reflect the company's bold, modern identity. The page introduces the brand, highlights the founder, and outlines the services in a clean, user-friendly layout.
+## 💡 Project Highlights
 
-## 🚀 Features
+- 🔷 **Custom-built** using HTML5 and CSS3 — clean code & mobile-first design
+- 📱 Fully responsive across devices (desktop, tablet, mobile)
+- 🎨 Consistent visual branding reflecting the company’s bold identity
+- 🌐 Built to support client outreach and future expansion
+- 🚀 Live preview hosted via GitHub Pages
 
-- Fully responsive design (mobile & desktop-friendly)
-- Brand-focused color scheme and layout
-- Smooth user navigation
-- Minimalist and modern visual appeal
-- Contact & social media integration ready (for future expansion)
+---
 
 ## 🛠️ Technologies Used
 
-- **HTML5** – structure and content
-- **CSS3** – styling and layout
+- **HTML5** – semantic structure  
+- **CSS3** – styling, layout, responsiveness  
+- *(JavaScript not used in this version)*
 
-## 📌 Purpose
+---
 
-This landing page serves as the **digital front face** of the company, enhancing its online presence and credibility. It helps potential clients understand what Hotbox offers and creates a lasting first impression.
+## 🔗 Live Preview
 
-## 🌐 Live Preview
+👉 www.hotboxagency.com
+*(Open in mobile and desktop for best results)*
 
-www.hotboxagency.com
+---
 
-## 👩‍💻 Built By
+## 👩‍💻 About the Developer
 
-Designed and developed independently by **Sameeksha Singh**  
-📫 [Contact Me](mailto:sameekshasingh1809@gmail.com)
+This project was independently designed and developed by **Sameeksha Singh** as part of a freelance collaboration with Hotbox. The aim was to create a minimal, brand-driven website that introduces the startup and helps them connect with potential clients online.
 
+---
+
+## 📬 Contact
+
+For project inquiries or collaborations:  
+📧 sameekshasingh1809@gmail.com  
+🔗 [GitHub Profile](https://github.com/sameekshasingh1809)
+
+---
 
